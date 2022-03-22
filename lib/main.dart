@@ -9,6 +9,7 @@ void main() async {
   SystemTool.keepPortrait();
 }
 
+// 学习flame制作游戏 【start】
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
