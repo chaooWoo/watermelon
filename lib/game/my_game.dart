@@ -7,7 +7,8 @@ import '../controllers/generate_ball.dart';
 import '../tools/size_tool.dart';
 import 'game_init.dart';
 import 'game_onload.dart';
-
+//HasTapableComponents处理点击事件
+//单次游戏的主类
 class MyGame extends Forge2DGame with HasTapableComponents {
   MyGame(
     double width,

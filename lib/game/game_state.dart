@@ -2,7 +2,7 @@ import '../components/ball.dart';
 import '../components/scores.dart';
 import '../game/game_setting.dart';
 import '../tools/hive_tool.dart';
-
+//记录游戏整体状态(最高纪录、游戏设置等)、单次游戏的开始/暂停及过程中的状态(本次游戏的分数、游戏状态等)
 class GameState {
   ///成绩
   static int score = 0;

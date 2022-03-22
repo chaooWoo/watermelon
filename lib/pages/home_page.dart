@@ -9,16 +9,18 @@ import '../widgets/base_widget.dart';
 import 'about_page.dart';
 import 'game_page.dart';
 import 'setting/game_setting_page.dart';
-
+//主页面
 class HomePage extends StatelessWidget {
+  //开始游戏
   void _start() {
+    //开始一次flame game loop
     GameLife.start();
   }
-
+  //跳转关于页面
   void _about() {
     NavigatorTool.push(AboutPage());
   }
-
+  //跳转设置页面
   Future<void> _setting() async {
     await GameState.initSetting();
     await NavigatorTool.push(
