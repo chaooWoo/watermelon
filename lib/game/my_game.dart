@@ -17,6 +17,7 @@ class MyGame extends Forge2DGame with HasTapableComponents {
   }) {
     hide ??= false;
     final viewportSize = Vector2(width, height);
+    //对游戏做一些简单的初始化
     GameInit(this).init(viewportSize);
   }
 

@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import '../game/game_state.dart';
-
+//基础可配设置
 class GameSetting {
   ///合成大/小瓜
   bool levelUp;

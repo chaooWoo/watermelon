@@ -6,7 +6,7 @@ import '../tools/navigator_tool.dart';
 import 'game_onload.dart';
 import 'game_state.dart';
 import 'my_game.dart';
-
+//单次游戏生命周期
 class GameLife {
   MyGame gameRef;
   GameLife(this.gameRef);
@@ -51,6 +51,7 @@ class GameLife {
   ///重新开始
   void restart() {
     pause();
+    //删除当前页，并进入到一个新的GamePage页
     NavigatorTool.replace(GamePage());
   }
 

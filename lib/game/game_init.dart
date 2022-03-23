@@ -15,6 +15,7 @@ class GameInit {
   void init(Vector2 size) {
     final scale = 10.0;
     final gravity = Vector2(0, -1) * size.gravitySize;
+    //设置重力参数
     gameRef.world.setGravity(gravity);
     gameRef.viewport = Viewport(size, scale);
     final boundaries = createBoundaries(gameRef.viewport);

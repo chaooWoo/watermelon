@@ -13,7 +13,7 @@ import '../tools/image/image_tool.dart';
 import 'game_state.dart';
 import 'level/levels.dart';
 import 'my_game.dart';
-
+//游戏加载
 class GameOnload {
   MyGame gameRef;
   GameOnload(this.gameRef);
@@ -21,10 +21,13 @@ class GameOnload {
   static bool inited = false;
 
   static Future<void> init() async {
+    //游戏状态、配置初始化
     await GameState.init();
     await Levels.init();
     if (inited) return;
+    //图片资源加载
     await ImageTool.loadAll();
+    //音频资源加载
     await AudioTool.loadAll();
     inited = true;
   }

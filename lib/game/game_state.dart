@@ -25,6 +25,7 @@ class GameState {
   ///分数部件
   static Scores scoreComponent;
 
+  //本地保存最高分数
   static Future<void> updateScore(int newScore) async {
     score = newScore;
     scoreComponent?.text = GameState.score.toString();
@@ -35,6 +36,7 @@ class GameState {
     }
   }
 
+  //本地保存用户设置
   static Future<void> updateSetting(GameSetting setting) async {
     gameSetting = setting;
     await HiveTool().set<String>('gameSetting', gameSetting.toJsonStr());
