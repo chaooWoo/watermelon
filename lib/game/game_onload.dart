@@ -35,6 +35,10 @@ class GameOnload {
   ///初始化
   Future<void> onLoad() async {
     await init();
+
+    ///使用MyGame(父类)的add方法，将组件都添加到游戏中
+    ///应该是按照添加的顺序在z轴上叠加的??
+
     final background = Background.create(gameRef.viewport);
     await gameRef.add(background);
     final deadLine = DeadLine.create(gameRef.viewport);

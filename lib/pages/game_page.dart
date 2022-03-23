@@ -6,7 +6,7 @@ import '../game/my_game.dart';
 import '../tools/navigator_tool.dart';
 import '../tools/sensor_tool.dart';
 import '../tools/system_tool.dart';
-
+//游戏页面
 class GamePage extends StatefulWidget {
   final bool hide;
   GamePage({this.hide});
@@ -18,6 +18,7 @@ class _GamePageState extends State<GamePage> {
   @override
   void initState() {
     super.initState();
+    //传感器处理
     SensorTool.start();
   }
 

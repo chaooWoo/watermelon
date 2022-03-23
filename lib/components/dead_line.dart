@@ -22,6 +22,7 @@ class DeadLine extends SpriteComponent {
     final sprite = Sprite(ImageTool.image('dead_line.png'));
     return DeadLine(
         sprite: sprite,
+        //用向量设置组件的宽高
         size: Vector2(
           viewport.size.x,
           viewport.vw(1),
